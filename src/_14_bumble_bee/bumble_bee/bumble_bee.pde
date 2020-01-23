@@ -1,4 +1,20 @@
+int x = 30;
+int y = 30;
+
 void draw() {
+  for (int i = 0; i < 20; i++) {
+    fill(#EEFF0D);
+  ellipse(x,y,30,30);
+  x = x + 10;
+  y = y + 10;
+  fill(0,0,0);
+  ellipse(x,y,30,30);
+  x = x + 10;
+  y = y + 10;
+  }
+  drawBeeFace(x,y);
+  x = 30;
+  y = 30;
 /*Use a loop to make a body for the Bee!
 Then put his head on using drawBeeFace(x,y)
 Use Modulo to make the colors alternate 
